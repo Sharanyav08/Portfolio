@@ -1,51 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylestreet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>V LAKSHMI SHARANYA | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <!-- tsParticles -->
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.9.2/tsparticles.bundle.min.js"></script>
 </head>
-
 <body>
+  <!-- Loading Screen -->
+  <div id="loading">Loading...</div>
 
-<header>
-    <h1>PawCare</h1>
-    <p>Adopt a Street Animal, Save a Life</p>
-</header>
+  <!-- Particle Background -->
+  <div id="particles-js"></div>
 
-<section class="pets-container">
+  <!-- Portfolio Title Top -->
+  <div class="portfolio-top">
+    <h2 class="portfolio-title">Portfolio</h2>
+  </div>
+  <!-- Navigation bar-->
 
-    <div class="pet-card">
-        <img src="https://images.unsplash.com/photo-1558788353-f76d92427f16" alt="Dog">
-        <h3>Buddy</h3>
-        <p>Age: 2 Years</p>
-        <p>Friendly street dog looking for a loving home.</p>
-        <button onclick="adoptPet('Buddy')">Adopt Me</button>
+  <nav class="navbar">
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Education</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#certifications">Certifications</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li>
+      <button id="theme-toggle" aria-label="Toggle dark mode">&#9789;</button>
+    </li>
+  </ul>
+  <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+</nav>
+
+
+  <!-- Hero Section -->
+  <section class="parallax">
+    <div class="hero-content">
+      <img src="C:\Users\lvsha\OneDrive\Desktop\programs\portfolio\profile.jpg" alt="Profile picture" class="profile-pic" />
+      <h1><span class="big-name">V LAKSHMI SHARANYA</span></h1>
+      <!-- <h3 style="color:#fff; font-weight: 400; margin-bottom: 30px;"> -->
+        Hi, I'm <span class="typed-text"></span>
+      </h3>
+      <a href=""C:\Users\lvsha\Downloads\LAKSHMI_SHARANYA_V.pdf"" download class="btn">Resume</a>
     </div>
+  </section>
 
-    <div class="pet-card">
-        <img src="https://images.unsplash.com/photo-1595433562696-19c2b4a45d1c" alt="Cat">
-        <h3>Luna</h3>
-        <p>Age: 1 Year</p>
-        <p>Calm and playful street cat rescued from roads.</p>
-        <button onclick="adoptPet('Luna')">Adopt Me</button>
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I’m Lakshmi Sharanya, A enthusiastic and detail-oriented Computer Science student with strong knowledge in Java, SQL, and web technologies. 
+Skilled in problem-solving, debugging, and collaborating on projects. Eager to apply technical expertise and adaptability 
+to contribute effectively as a to build innovative solutions.
+    </p>
+    <div class="skills">
+      <h3>Skills</h3>
+      <div class="skills-row">
+        <img src="C:\Users\lvsha\Downloads\html.jpg" alt="HTML" class="skill-icon" />
+        <img src="C:\Users\lvsha\Downloads\css.jpg" alt="CSS" class="skill-icon" />
+        <img src="C:\Users\lvsha\Downloads\javascript.jpg" alt="JavaScript" class="skill-icon" />
+      </div>
+      <div class="skills-row">
+        <img src="C:\Users\lvsha\Downloads\sql.jpg" alt="SQL" class="skill-icon" />
+        <img src="C:\Users\lvsha\Downloads\java.jpg" alt="Java" class="skill-icon" />
+      </div>
     </div>
-
-    <div class="pet-card">
-        <img src="https://images.unsplash.com/photo-1583511655826-05700d52f4d9" alt="Dog">
-        <h3>Rocky</h3>
-        <p>Age: 3 Years</p>
-        <p>Loyal and protective, perfect family companion.</p>
-        <button onclick="adoptPet('Rocky')">Adopt Me</button>
+  </section>
+  <!-- Education Section -->
+  <section id="experience">
+    <h2>EDUCATION</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h4>Bachelor of Technology in Computer Science Engineering (AI&ML)</h4>
+        <span>2022-2026</span>
+        <p>Mohan Babu University</p>
+        <span class="edu-percentage">89% </span>
+      </div>
+      <div class="timeline-item">
+        <h4>Intermediate-MPC</h4>
+        <span>2020-2022</span>
+        <p>Raju Junior College</p>
+        <span class="edu-percentage">92%</span>
+      </div>
+      <div class="timeline-item">
+        <h4>State Board of Secondary Education</h4>
+        <span>2019-2020</span>
+        <p>Raju High School</p>
+        <span class="edu-percentage">99%</span>
+      </div>
     </div>
+  </section>
 
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Featured Projects</h2>
+    <div class="projects-gallery">
+      <div class="project-card">
+        <img src=C:\Users\lvsha\OneDrive\Desktop\leaf.avif alt="Plant leaf disease detection" />
+        <div class="project-info">
+          <h3>Plant leaf disease detection</h3>
+          <p>
+            Built a machine learning model to classify plant leaf diseases from images using feature 
+extraction and classification algorithms.Processed and augmented image datasets to improve accuracy, enabling early 
+detection and prevention of crop damage.
+          </p>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="C:\Users\lvsha\OneDrive\sharanya\pets.jpg" alt="Pet Adoption" />
+        <div class="project-info">
+          <h3>Online pet adoption System</h3>
+          <p>
+            Built a fully functional website from scratch, focusing on user experience and 
+performance.This user-friendly website allows visitors to browse available pets, filter them based on species (dogs, 
+cats, other animals), and get essential adoption details.
+          </p>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="C:\Users\lvsha\OneDrive\Desktop\images.jpg" alt="Portfolio" />
+        <div class="project-info">
+          <h3>Portfolio</h3>
+          <p>
+            I’m a passionate software developer who loves building innovative projects in web development, Java, and machine learning. This portfolio highlights my journey of learning, problem-solving, and creating impactful solutions through clean and efficient code
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="certifications">
+  <h2>Certifications</h2>
+  <div class="cert-list-vertical">
+    <a href="C:\Users\lvsha\Downloads\Java Foundation Certificate .pdf" target="_blank" class="cert-item-vertical" title="Java Certification">
+      <img src="C:\Users\lvsha\Downloads\java.jpg" alt="Java Certificate" class="cert-icon-vertical" />
+      <span>Java Programming certification</span>
+    </a>
+    <a href="C:\Users\lvsha\OneDrive\Desktop\Oracle GenAICertificate.pdf" target="_blank" class="cert-item-vertical" title="CSA Certification">
+      <img src="C:\Users\lvsha\OneDrive\Desktop\oracle.png" alt="Oracle GenAI Certification" class="cert-icon-vertical" />
+      <span>Oracle GenAI Certification</span>
+    </a>
+    <!-- Add more certificates as needed -->
+  </div>
 </section>
 
-<footer>
-    <p>© 2025 PawCare | Street Animal Adoption</p>
-</footer>
 
-<script src="script.js"></script>
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <form id="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Message" required></textarea>
+      <button type="submit" class="btn">Send</button>
+      <div class="form-status"></div>
+    </form>
+    <div class="contact-links">
+      <a href="mailto:lvsharanya08@gmail.com.com" target="_blank" title="Email"
+        ><img src="C:\Users\lvsha\OneDrive\Desktop\gmail.jpg" alt="Email" class="contact-icon" />
+      </a>
+      <a
+        href="https://www.linkedin.com/in/sharanya-reddy-382489297/"
+        target="_blank"
+        title="LinkedIn"
+        ><img src="C:\Users\lvsha\OneDrive\Desktop\social-media-linkedIn.jpg" alt="LinkedIn" class="contact-icon"
+      /></a>
+      <a href="https://github.com/Sharanyav08" target="_blank" title="GitHub"
+        ><img src="C:\Users\lvsha\OneDrive\Desktop\git.jpg" alt="GitHub" class="contact-icon"
+      /></a>
+    </div>
+  </section>
+
+  <!-- Scroll to Top Button -->
+  <button id="scroll-top" title="Go to top">↑</button>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 V LAKSHMI SHARANYA. All rights reserved.</p>
+  </footer>
+
+  <!-- Custom Cursor -->
+  <div class="cursor"></div>
 </body>
 </html>
+
